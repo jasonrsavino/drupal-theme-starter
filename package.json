@@ -1,0 +1,8 @@
+{
+  "name": "drupal-theme-starter",
+  "version": "1.0.0",
+  "description": "drupal-theme-starter is a custom Drupal 8 theme using Bootstrap 4.",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
