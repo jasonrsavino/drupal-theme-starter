@@ -1,25 +1,24 @@
 
 # Drupal 8 Theme Starter
 
-This is a starter Drupal 8 theme that uses the Bootstrap 3 Frontend Framework.
+This is a starter Drupal 8 theme that uses the Bootstrap 4 Frontend Framework.
 
 ## Setup
 
 Make a copy of this theme and rename RENAME to your new theme name in these files:
 
-- /bootstrap/Gruntfile.js
-- /bootstrap/less/bootstrap.less
-- /RENAME.info.yml
-- /RENAME.libraries.yml
+- ./gulpfile.js
+- ./scss/RENAME.scss
+- ./RENAME.info.yml
+- ./RENAME.libraries.yml
 
-Rename the folder at:
-- /bootstrap/less/~RENAME/
+## Install dependencies
+- `npm install`
 
-## Compile Bootstrap
-- cd into /bootstrap and run `npm install`
-- run `grunt dist` to compile
-- You can also run `grunt watch` to autocompile
-
-## Add LESS files
-- Add new less files you nees in /bootstrap/less/~NEWTHEMENAME/
-- Add them to be included in /bootstrap/less/bootstrap.less
+## Add SCSS files
+- Add new scss files you need as `./scss/_newcomponent.scss`
+- Add them to be included at the bottom of `./scss/RENAME.scss`
+  - We're not globbing by default because it's significantly slower, but if your project will require a very large number of files, it could be useful to add.
+  
+## Add JS files
+JS can be added in `./js` and will be bundled together by gulp.

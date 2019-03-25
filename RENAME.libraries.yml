@@ -4,6 +4,6 @@ global-styling:
     base:
       dist/RENAME.css: {}
   js:
-    dist/main.js: {}
+    dist/RENAME.js: {}
   dependencies:
     - core/jquery
