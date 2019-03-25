@@ -1,5 +1,5 @@
 
-# Xeno Media - Demeter - Drupal 8 Theme Starter
+# Drupal 8 Theme Starter
 
 This is a starter Drupal 8 theme that uses the Bootstrap 3 Frontend Framework.
 
