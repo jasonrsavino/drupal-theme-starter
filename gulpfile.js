@@ -24,15 +24,17 @@ gulp.task('sass', function (done) {
 
 gulp.task('uglify', function(done) {
   gulp.src([ './js/*.js' ])
-      .pipe(uglify('main.js'))
+      .pipe(sourcemaps.init())
+      .pipe(uglify('RENAME.js'))
+      .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest('./dist'));
   done();
 });
 
 gulp.task('watch', gulp.series('sass', 'uglify', function(done){
   livereload.listen();
-  gulp.watch('./sass/**/*.scss', ['sass']);
-  gulp.watch('./js/*.js', ['uglify']);
+  gulp.watch('./scss/**/*.scss', gulp.series('sass'));
+  gulp.watch('./js/*.js', gulp.series('uglify'));
   gulp.watch(['./dist/*', './**/*.twig'], function (files){
     livereload.changed(files)
   });
