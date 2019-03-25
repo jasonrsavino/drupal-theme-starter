@@ -5,7 +5,7 @@ This is a starter Drupal 8 theme that uses the Bootstrap 4 Frontend Framework.
 
 ## Setup
 
-Make a copy of this theme and rename RENAME to your new theme name in these files:
+[Duplicate this repo](https://help.github.com/en/articles/duplicating-a-repository) and rename RENAME to your new theme name in these files:
 
 - ./composer.json
 - ./gulpfile.js
