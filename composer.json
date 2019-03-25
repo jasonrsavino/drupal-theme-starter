@@ -1,0 +1,13 @@
+{
+    "name": "kanopi/RENAME",
+    "description": "RENAME is a custom Drupal 8 theme using Bootstrap 4.",
+    "type": "project",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Kanopi Studios",
+            "url": "https://www.kanopistudios.com"
+        }
+    ],
+    "type": "drupal-theme"
+}
